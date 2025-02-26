@@ -1,10 +1,9 @@
 document.getElementById('login-btn').addEventListener('click',function(event){
     event.preventDefault();
-    const phoneInput = document.querySelector('#phone-input').value;
-    const pinInput = document.querySelector('#pin-input').value;
-    const pinValue = Number(pinInput);
-    if(phoneInput.length === 11 && phoneInput.startsWith('01')){
-        if(pinValue ===1234){
+    const phone = document.getElementById('phone-input').value;
+    const pin = getInputValueById('pin-input');
+    if(phone.length === 11 && phone.startsWith('01')){
+        if(pin ===1234){
             window.location.href = '../main.html'
         }
         else{
