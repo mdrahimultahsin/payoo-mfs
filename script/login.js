@@ -6,7 +6,7 @@ document
     const pin = getInputValueById("pin-input");
     if (phone.length === 11 && phone.startsWith("01")) {
       if (pin === 1234) {
-        window.location.href = "../main.html";
+        window.location.href = "main.html";
       } else {
         alert("Wrong pin");
       }
