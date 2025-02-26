@@ -24,7 +24,7 @@ document.getElementById("paybill-btn").addEventListener("click", function (event
           const div = document.createElement("div");
           div.setAttribute(
             "class",
-            "bg-white rounded-xl border border-gray-300 flex justify-between items-center px-5 py-4 mb-4"
+            "bg-white rounded-xl border border-gray-300 flex justify-between items-center px-3 py-4 mb-4"
           );
           div.innerHTML = `
       <div class="flex items-center gap-5" title="Biller No :${number}">
